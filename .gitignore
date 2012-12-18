@@ -1,30 +1,9 @@
-#*
-*$
-*.BAK
-*.Z
-*.bak
-*.class
-*.elc
-*.ln
-*.log
-*.o
-*.obj
-*.olb
-*.old
-*.orig
-*.pyc
-*.pyo
-*.rej
-*~
-,*
-.#*
-.DS_Store
-.del-*
-.deployables
-.make.state
-.nse_depinfo
-CVS.adm
-RCS
-RCSLOG
-SCCS
-_$*
+# ignore vendor libs
+/vendor/*
+
+# Settings
+.project
+/settings/*
+
+# git
+.git/*
