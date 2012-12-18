@@ -3,7 +3,7 @@
 
 # Settings
 .project
-/settings/*
+./settings/*
 
 # git
 .git/*
