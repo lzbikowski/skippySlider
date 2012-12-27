@@ -10,18 +10,18 @@ function autoSlideSwitch() {
 var sliding = false;
 function slideSwitch(direction, slidingTime) {
 	sliding = true;
-	var $active = $('#carouselSlider DIV.active');
+	var $active = $('#skippySlider DIV.active');
 	var $next = null;
 
 	if ($active.length == 0)
-		$active = $('#carouselSlider DIV:last');
+		$active = $('#skippySlider DIV:last');
 
 	if (direction == 'prev')
 		$next = $active.prev().length ? $active.prev()
-				: $('#carouselSlider DIV:last');
+				: $('#skippySlider DIV:last');
 	else
 		$next = $active.next().length ? $active.next()
-				: $('#carouselSlider DIV:first');
+				: $('#skippySlider DIV:first');
 
 	$active.addClass('last-active');
 	$next.css({
@@ -34,11 +34,11 @@ function slideSwitch(direction, slidingTime) {
 	});
 }
 
-ctrl = $(".carousel-control");
+ctrl = $(".slider-control");
 ban = $("#bannerSlider");
-ctrl_left = $('.carousel-control.left');
-ctrl_right = $('.carousel-control.right');
-ctrl.hide('show');
+ctrl_left = $('.slider-control.left');
+ctrl_right = $('.slider-control.right');
+ctrl.hide('slow');
 hiding = false;
 
 // hide controls when enter and protect from multiple hiding/showing, run autoslide
@@ -52,7 +52,7 @@ ban.bind("mouseleave", function(evt) {
 		});
 	}
 });
-// show controls when enter and protect from multiple hiding/showing, disable autoslide
+// show controls when enter and protects from multiple hiding/showing, disable autoslide
 ban.bind("mouseenter", function(evt) {
 	clearInterval(playSlideshow);
 	if (ctrl.is(":hidden") || hiding) {

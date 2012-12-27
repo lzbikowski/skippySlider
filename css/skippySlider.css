@@ -2,7 +2,7 @@
 * SkippySlider core CSS file
 */
 
-.carousel {
+.slider {
 	position: relative;
 	margin-bottom: 20px;
 	line-height: 1;
@@ -11,12 +11,12 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     padding: 4px;
 }
-.carousel-inner {
+.slider-inner {
 	overflow: hidden;
 	width: 100%;
 	position: relative;
 }
-.carousel-control {
+.slider-control {
 	z-index: 15;
 	position: absolute;
 	top: 40%;
@@ -37,36 +37,36 @@
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
-.carousel-control.right {
+.slider-control.right {
 	left: auto;
 	right: 15px;
 }
-.carousel-control:hover {
+.slider-control:hover {
 	z-index: 15;
 	color: #ffffff;
 	text-decoration: none;
 	opacity: 0.9;
 	filter: alpha(opacity=90);
 }
-#carouselSlider {
+#skippySlider {
 	position: relative;
 	height: 500px;
 }
 
-#carouselSlider img {
+#skippySlider img {
 }
 
-#carouselSlider DIV {
+#skippySlider DIV {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 8;
 	opacity: 0.0;
 }
-#carouselSlider DIV.active {
+#skippySlider DIV.active {
 	z-index: 10;
 	opacity: 1.0;
 }
-#carouselSlider DIV.last-active {
+#skippySlider DIV.last-active {
 	z-index: 9;
 }
